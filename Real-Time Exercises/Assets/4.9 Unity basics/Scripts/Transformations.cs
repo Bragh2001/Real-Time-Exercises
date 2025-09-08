@@ -27,10 +27,21 @@ public class Transformations : MonoBehaviour
         startPos = createGrid.startPos;
         startScale = createGrid.grid[0].localScale;
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        for (int i = 0, z = 0; z < createGrid.gridResolution; z++)
+        {
+            for (int y = 0; y < createGrid.gridResolution; y++)
+            {
+                for (int x = 0; x < createGrid.gridResolution; x++, i++)
+                {
+                    createGrid.grid[i].localPosition = startPos[i] + Vector3.up * Mathf.Sin(Time.time * moveFrequency + moveOffset) * moveAmplitude;
+
+                    createGrid.grid[i].localScale = startScale * Mathf.Sin(Time.time * scaleFrequency) * scaleAmplitude + Vector3.one * scaleOffset;
+
+                    createGrid.grid[i].Rotate(Vector3.forward * Time.deltaTime * rotationSpeed);
+                }
+            }
+        }
     }
 }
