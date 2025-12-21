@@ -146,7 +146,7 @@ Material:
     - _AlphaRemapMax: 1
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
-    - _Amplitude: 0.3
+    - _Amplitude: 0.15
     - _Anisotropy: 0
     - _BlendMode: 0
     - _CoatMask: 0
@@ -216,8 +216,8 @@ Material:
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 1
-    - _SpeedX: 1
-    - _SpeedY: 1
+    - _SpeedX: 0.5
+    - _SpeedY: 0.5
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
