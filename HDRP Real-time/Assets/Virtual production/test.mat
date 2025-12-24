@@ -275,6 +275,7 @@ Material:
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
     - _ZWrite: 0
+    - _brightness: 0.71
     - _fuzziness: 0.13
     - _huerange: 0.42
     m_Colors:
